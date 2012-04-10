@@ -18,7 +18,7 @@ module FccContentApi
 		end
 
 		def self.find(id)
-			resp = FccContentApi::Client.new.get(:id => id).perform.body
+			resp = FccContentApi.client.get(:id => id).perform.body
 			JSON.parse resp
 		end
 	end
@@ -37,7 +37,7 @@ module FccContentApi
 		def all; execute; end
 
 		def request
-			@request ||= FccContentApi::Client.new.all criteria
+			@request ||= FccContentApi.client.all criteria
 		end
 
 		def execute
