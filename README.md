@@ -27,13 +27,19 @@ FccContentApi::Content.where(:edocs => "true").where(:type => "proceeding").wher
 FccContentApi::Content.where({:edocs => "true", :type => "proceeding" :comments => "true"}).all
 ```
 
+If you know the id of the object you want, use `FccContentApi::Content#find`:
+
+```ruby
+FccContentApi::Content#find(38660)
+```
+
 ## Installation
 
 `gem install fcc-content-api` or:
 
 ```ruby
-	# Gemfile
-	gem "fcc-content-api"
+# Gemfile
+gem "fcc-content-api"
 ```
 
 ## More Info
