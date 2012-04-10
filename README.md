@@ -30,7 +30,7 @@ FccContentApi::Content.where({:edocs => "true", :type => "proceeding" :comments 
 If you know the id of the object you want, use `FccContentApi::Content#find`:
 
 ```ruby
-FccContentApi::Content#find(38660)
+FccContentApi::Content.find(38660)
 ```
 
 ## Installation
