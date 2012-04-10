@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/adelevie/fcc-content-api.png?branch=master)](http://travis-ci.org/adelevie/fcc-content-api)
+
 The FCC Content API allows you to programmatically access much of the content accessible on [FCC.gov](http://fcc.gov).
 
 fcc-content-api is a lightweight Ruby wrapper for the Federal Communication Commission's Content API. The query interface resembles ActiveRecord. The response objects are simple Ruby `Hash`es and `Array`s.
