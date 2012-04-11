@@ -3,7 +3,6 @@ require "weary"
 require "json"
 
 module FccContentApi
-
   def self.client
     @@client ||= FccContentApi::Client.new
   end
@@ -24,7 +23,6 @@ module FccContentApi
   end
 
   class Query
-
     def initialize(klass); @klass = klass; end
 
     def criteria; @criteria ||= {}; end
