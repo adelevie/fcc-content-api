@@ -1,0 +1,42 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://www.fcc.gov/api/content.json?title=Open%2520Internet%2520Workshops%2520and%2520Speeches
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Host: 
+      - www.fcc.gov
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - Apache
+      Last-Modified: 
+      - Fri, 13 Apr 2012 11:44:53 GMT
+      Content-Length: 
+      - "319"
+      Content-Type: 
+      - application/json
+      Cache-Control: 
+      - no-cache, must-revalidate, post-check=0, pre-check=0
+      Expires: 
+      - Fri, 13 Apr 2012 11:44:18 GMT
+      Date: 
+      - Fri, 13 Apr 2012 11:44:18 GMT
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "[{\"count\":\"1\",\"pages\":0,\"itemsPerPage\":10,\"currentPage\":0},{\"nid\":\"37071\",\"title\":\"Open Internet Workshops and Speeches\",\"created\":\"2011-12-21\",\"changed\":\"2011-12-21\",\"type\":\"article\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/encyclopedia\\/open-internet-workshops-and-speeches\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/37071\"}]"
+    http_version: 
+  recorded_at: Fri, 13 Apr 2012 11:44:18 GMT
+recorded_with: VCR 2.0.1

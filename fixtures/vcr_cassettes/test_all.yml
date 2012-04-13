@@ -1,0 +1,42 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://www.fcc.gov/api/content.json
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Host: 
+      - www.fcc.gov
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - Apache
+      Last-Modified: 
+      - Fri, 13 Apr 2012 11:48:45 GMT
+      Content-Length: 
+      - "2885"
+      Content-Type: 
+      - application/json
+      Cache-Control: 
+      - no-cache, must-revalidate, post-check=0, pre-check=0
+      Expires: 
+      - Fri, 13 Apr 2012 11:45:17 GMT
+      Date: 
+      - Fri, 13 Apr 2012 11:45:17 GMT
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "[{\"count\":\"21171\",\"pages\":2117,\"itemsPerPage\":10,\"currentPage\":0},{\"nid\":\"38892\",\"title\":\"Clyburn Statement on Award of Contract for Literature Review\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/clyburn-statement-award-contract-literature-review\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38892\"},{\"nid\":\"38891\",\"title\":\"Broadband Over Power Lines\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/broadband-over-power-lines\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38891\"},{\"nid\":\"38890\",\"title\":\"Ex Parte Rules and Other Procedural Rules\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/ex-parte-rules-and-other-procedural-rules\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38890\"},{\"nid\":\"38889\",\"title\":\"Commissioner McDowell Remarks: MMTC Honors Commissioner Copps\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/commissioner-mcdowell-remarks-mmtc-honors-commissioner-copps\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38889\"},{\"nid\":\"38888\",\"title\":\"WTB seeks comment on waiver of USF support methodology rule\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/wtb-seeks-comment-waiver-usf-support-methodology-rule\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38888\"},{\"nid\":\"38887\",\"title\":\"Wireline Bureau Seeks Comment on BelWave Request for Review\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/wireline-bureau-seeks-comment-belwave-request-review\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38887\"},{\"nid\":\"38884\",\"title\":\"Collocation Workshop May 1, 2012, Promoting Mobile Brandband\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/collocation-workshop-may-1-2012-promoting-mobile-brandband\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38884\"},{\"nid\":\"38883\",\"title\":\"Erratum - Al-Ihsan Academy, South Ozone Park, NY et al.\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/erratum-al-ihsan-academy-south-ozone-park-ny-et-al-0\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38883\"},{\"nid\":\"38882\",\"title\":\"LPFM Channel Finder Tool Now Available\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/lpfm-channel-finder-tool-now-available\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38882\"},{\"nid\":\"38881\",\"title\":\"DeltaCom, Inc. Order Denying Renewal Deadline Waiver Requests\",\"created\":\"2012-04-12\",\"changed\":\"2012-04-13\",\"type\":\"edoc\",\"webUrl\":\"http:\\/\\/www.fcc.gov\\/document\\/deltacom-inc-order-denying-renewal-deadline-waiver-requests\",\"uri\":\"http:\\/\\/www.fcc.gov\\/api\\/content\\/38881\"}]"
+    http_version: 
+  recorded_at: Fri, 13 Apr 2012 11:45:17 GMT
+recorded_with: VCR 2.0.1

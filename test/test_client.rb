@@ -1,8 +1,9 @@
 require "test_helper"
 
 class TestClient < Test::Unit::TestCase
-  VCR.use_cassette("test_title") do
-    def test_title
+
+  def test_title
+    VCR.use_cassette("test_title") do
       title = "Open Internet Workshops and Speeches"
       resp = FccContentApi::Content.where(:title => URI.encode(title)).all
       assert_equal resp.first.keys.sort!, ["count", "pages", "itemsPerPage", "currentPage"].sort!
@@ -11,16 +12,17 @@ class TestClient < Test::Unit::TestCase
     end
   end
 
-  VCR.use_cassette("test_all") do
-    def test_all
+  def test_all
+    VCR.use_cassette("test_all") do
       resp = FccContentApi::Content.all
       assert_equal resp.first.keys.sort!, ["count", "pages", "itemsPerPage", "currentPage"].sort!
       assert_equal resp[1].keys.sort!, ["nid", "title", "created", "changed", "type", "webUrl", "uri"].sort!
     end
   end
 
-  VCR.use_cassette("test_find") do
-    def test_find
+  
+  def test_find
+    VCR.use_cassette("test_find") do
       resp = FccContentApi::Content.find 38837
       assert_equal resp.class, Hash
       keys = ["nid", "title", "created", "changed", 
