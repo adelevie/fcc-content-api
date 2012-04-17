@@ -49,6 +49,9 @@ module FccContentApi
     domain "http://www.fcc.gov/api"
 
     get :all, "/content.json?" do |resource|
+
+      resource.user_agent "rubygem/fcc-content-api/#{VERSION}"
+
       resource.optional :created_before, :created_after, # YYYY-MM-DD
                         :changed_before, :changed_after, # YYYY-MM-DD
                         :search_string,
@@ -64,7 +67,9 @@ module FccContentApi
                         :title
     end
 
-    get :get, "/content/{id}.json"
+    get :get, "/content/{id}.json" do |resource|
+      resource.user_agent "rubygem/fcc-content-api/#{VERSION}"
+    end
 
   end
 end
